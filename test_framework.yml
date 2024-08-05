@@ -1,0 +1,28 @@
+tests:
+- Basic addition test:
+    x_add: 5
+    y_add: 7
+    answer: 12
+
+- Basic2 addition test:
+    x_add: 12
+    y_add: 8
+    answer: 20
+
+- Negative addition test:
+    x_add: 5
+    y_add: -7
+    answer: -2
+
+- Execute jar test:
+    jar_file: demo.jar
+    answer: "Suma de 11 y 5: 15\n"
+
+- File existence test:
+    file_path: "./jar_test/suma_resultado.txt"
+    answer: True
+
+- Content file test:
+    file_path: "./jar_test/suma_resultado.txt"
+    answer: "Archivo Exportando y generado desde java\n"
+    

@@ -1,0 +1,17 @@
+test_types:
+
+- For running addition tests:
+    required_keys: ["x_add", "y_add"]
+    method: test_PythonsAddition
+
+- For running jar tests:
+    required_keys: ["jar_file"]
+    method: test_execute_jar
+
+- For running file existence tests:
+    required_keys: ["file_path"]
+    method: test_file_exists
+
+- For running content file tests:
+    required_keys: ["file_path"]
+    method: test_content_file
