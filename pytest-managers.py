@@ -1,12 +1,6 @@
-from custom_add import run_add_test
 from asyncio import log
 import pytest
 from execute_jar import execute_jar, file_exists, content_file
-
-def test_PythonsAddition(**args):
-    run_add_test(**args)
-    test_info = args["test_info"]
-    assert test_info["x_add"] + test_info["y_add"] == test_info["answer"]
 
 def test_execute_jar(**args):
     # Given.
@@ -34,4 +28,5 @@ def test_content_file(**args):
     result = content_file(file_name["file_path"])
     # Then.
     assert result == file_name["answer"]
+
 

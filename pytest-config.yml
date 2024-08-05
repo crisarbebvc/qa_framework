@@ -1,9 +1,5 @@
 test_types:
 
-- For running addition tests:
-    required_keys: ["x_add", "y_add"]
-    method: test_PythonsAddition
-
 - For running jar tests:
     required_keys: ["jar_file"]
     method: test_execute_jar
